@@ -11,7 +11,7 @@ function Navbar() {
     const navigate = useNavigate()
 
   return (
-    <div className='navbar-container fixed top-0 left-0 z-50 w-full flex items-center justify-between px-6 py-5 bg-[#2b2b2b]'>
+    <div className='fixed top-0 left-0 z-50 w-full flex items-center justify-between px-6 md:px-16 lg:px-36 py-5 bg-[#2b2b2b]'>
         <Link to="/" className='flex items-center gap-1'>
             <Spotlight color='#cf994d' size={30}/>
             <span className='text-[18px]'>CineApp</span>
@@ -22,7 +22,7 @@ function Navbar() {
             <Link onClick={() => {scrollTo(0,0)}} to={"/movies"}>Movies</Link>  
             <Link onClick={() => {scrollTo(0,0)}} to={"/favorites"}>Favorites</Link>     
         </div>
-
+{/*flex flex-col md:flex-row items-center gap-8 text-[14px] ml-auto*/}
         <div className='flex items-center gap-8 text-[14px] ml-[20px]'>
             <Search color='white' size={14}/>
             {
