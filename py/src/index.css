@@ -1,19 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @theme{
-  /*--color-primary: #1E1E1E;*/
 
 }
 
 *{
-  font-family: "Roboto", sans-serif;
+  font-family: "Outfit", sans-serif;
 }
 
 body {
   color: white;
   background-color: #1E1E1E;
 
+}
+
+.no-scrollbar {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
 }

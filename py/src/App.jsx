@@ -1,4 +1,5 @@
 import React from 'react'
+import { Toaster } from 'react-hot-toast'
 import Navbar from './components/Navbar'
 import { Routes, Route } from 'react-router-dom'
 import HomeMenu from './pages/HomeMenu'
@@ -13,6 +14,7 @@ function App() {
   return (
     <>
       <Navbar/>
+      <Toaster />
       <Routes>
         <Route path='/' element={<HomeMenu/>}/>
         <Route path='/movies' element={<Movies/>}/>
